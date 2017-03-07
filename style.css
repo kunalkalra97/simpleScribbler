@@ -1,0 +1,118 @@
+@font-face {
+    src:url('./Roboto-Thin.ttf');
+    font-family: roboto;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #7986CB;
+    color: white;
+    font-family: roboto;
+}
+
+.canvas_wrapper {
+    margin: auto;
+    width: 50%;
+    margin-top: 100px; 
+}
+
+canvas {
+    background-color: white; 
+    border-radius: 10px;
+    cursor: crosshair;
+}
+
+.color_selector {
+    margin-top: 50px;
+}
+
+.color_selector ul {
+    width: 30%; 
+    margin: auto;
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.color_selector li {
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color:#E53935;
+}
+
+.green {
+    background-color: #1B5E20;
+}
+
+.blue {
+    background-color: #1A237E;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+}
+
+.selected {
+    border:2px solid white;
+}
+
+.color_creator  {
+    display: none;
+    text-align: center;
+    background-color: #283593;
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.color_creator span {
+    font-size: 32px;
+}
+
+.arrow {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.arrow img {
+    height: 20px;
+    width: 40px;
+    cursor: pointer;
+}
+
+
+#addColor {
+
+    
+    background-color: black;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    outline: none;
+    font-family: roboto;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+#addColor:hover {
+    background-color: coral;
+    transition: background-color 0.5s;
+}

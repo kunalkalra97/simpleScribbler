@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Scribbler</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+    <div class="color_creator">
+
+        <span>Create Your Own color here using RGB values</span>
+
+        <p>
+            <label>Red</label><br>
+            <input id="red" type="range" min="0" max="255" value="0"><br>
+        </p>
+        <p>
+            <label>Green</label><br>
+            <input id="green" type="range" min="0" max="255" value="0"><br>
+        </p>
+        <p>
+            <label>Blue</label><br>
+            <input id="blue" type="range" min="0" max="255" value="0"><br>
+        </p>
+
+        <button id="addColor">Add Color</button><br><br>
+
+        <span>Change line width</span>
+        <p>
+            <label>Width</label><br>
+            <input id="line_width" type="range" min="1" max="10" value="1">
+        </p>
+
+    </div>
+
+    <div class="arrow">
+        <img src="./downArrow.png">
+    </div>
+
+    <div></div>
+
+    <div class="canvas_wrapper">
+        <canvas width="720px" height="300px"></canvas>
+    </div>
+
+    <div class="color_selector">
+
+        <ul>
+            <li class="red"></li>
+            <li class="blue"></li>
+            <li class="green"></li>
+            <li class="yellow"></li>
+            <li class="black"></li>
+        </ul>
+        
+    </div>
+
+    <script src="./jQuery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
